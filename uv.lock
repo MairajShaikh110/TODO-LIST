@@ -1,0 +1,21 @@
+version = 1
+requires-python = ">=3.13"
+
+[options]
+emit-trusted-host = false
+emit-find-links = false
+
+[package]
+name = "todo-console-app"
+version = "1.0.0"
+source = { editable = "." }
+dependencies = [
+    "questionary>=1.10.0",
+    "rich>=13.0.0",
+]
+
+[package.metadata]
+requires-dist = [
+    "rich>=13.0.0",
+    "questionary>=1.10.0",
+]
